@@ -1,5 +1,5 @@
 Crate:
-  #Type of crate (CSGO/QuadCrate/QuickCrate/Roulette/CrateOnTheGo/FireCracker/Wonder/Wheel/War/Cosmic(This requires a additional info to work.)).
+  #Type of crate (CSGO/QuadCrate/QuickCrate/Roulette/CrateOnTheGo/FireCracker/Wonder/Wheel/War/Cosmic/Bats(This requires a additional info to work.)).
   CrateType: CSGO
   #Name of the Inventory if a GUI crate.
   CrateName: '&8Basic Crate'

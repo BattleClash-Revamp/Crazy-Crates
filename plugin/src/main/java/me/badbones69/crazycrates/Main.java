@@ -23,8 +23,8 @@ import org.bukkit.scheduler.BukkitRunnable;
 public class Main extends JavaPlugin implements Listener {
     
     private boolean updateChecker = false;
-    private CrazyCrates cc = CrazyCrates.getInstance();
-    private FileManager fileManager = FileManager.getInstance();
+    private final CrazyCrates cc = CrazyCrates.getInstance();
+    private final FileManager fileManager = FileManager.getInstance();
     private boolean isEnabled = true;// If the server is supported
     
     @Override
@@ -88,6 +88,7 @@ public class Main extends JavaPlugin implements Listener {
         pm.registerEvents(new QuickCrate(), this);
         pm.registerEvents(new CrateControl(), this);
         pm.registerEvents(new CrateOnTheGo(), this);
+        pm.registerEvents(new Bats(), this);
         if (Version.getCurrentVersion().isNewer(Version.v1_11_R1)) {
             pm.registerEvents(new Events_v1_12_R1_Up(), this);
         } else {

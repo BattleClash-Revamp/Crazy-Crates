@@ -12,11 +12,12 @@ public enum CrateType {
     ROULETTE("Roulette"),
     WHEEL("Wheel"),
     WONDER("Wonder"),
-    WAR("War");
+    WAR("War"),
+    BATS("Bats");
     
-    private String name;
+    private final String name;
     
-    private CrateType(String name) {
+    CrateType(String name) {
         this.name = name;
     }
     
